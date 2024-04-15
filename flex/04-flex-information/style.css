@@ -24,3 +24,26 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* Approach 1 - I doubt they did it this way.*/
+body {
+  gap: 32px 52px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.title {
+  flex-basis: 100vw;
+}
+
+.title, .text {
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 200px;
+  align-items: center;
+}
