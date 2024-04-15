@@ -23,3 +23,40 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
+
+/* Approach 1: Probably not the way they intended, but does work */
+/* .header {
+  display: flex;
+  padding: 8px;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+  margin: auto 0;
+}
+
+.left-links, .right-links {
+  display: flex;
+} */
+
+/* Approach 2: The way they probably intended */
+.header {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+  display: flex;
+}
